@@ -1,0 +1,290 @@
+
+@-moz-keyframes spin {
+    from {
+      transform: rotateY(0deg) rotateX(0) rotateZ(0);
+      -moz-transform: rotateY(0deg) rotateX(0) rotateZ(0);
+    }
+    to {
+      transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+      -moz-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      transform: rotateY(0deg) rotateX(0) rotateZ(0);
+      -webkit-transform: rotateY(0deg) rotateX(0) rotateZ(0);
+    }
+    to {
+      transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+      -webkit-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg) rotateX(0) rotateZ(360);
+    }
+    to {
+      transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg);
+    }
+  }
+
+.container {
+    -moz-perspective: 1000px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  }
+
+#mesa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-animation: spin 14s infinite linear;
+    -moz-animation: spin 14s infinite linear;
+    animation: spin 14s infinite linear;
+}
+#mesa figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#mesa .soporte {
+    width: 5%;
+    height: 5%;
+    margin: 0;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#mesa .back {
+    border-radius: 50%;
+
+    background: hsla(34, 100%, 50%, 0.5); 
+}
+#mesa .front {
+    border-radius: 50%;
+
+    background: hsla(34, 100%, 50%, 0.5); 
+}
+
+#mesa .l1 {
+    background: rgb(102, 102, 102); 
+}
+
+#mesa .l2 {
+    background: rgb(102, 102, 102); 
+}
+#mesa .l3 {
+    background: rgb(102, 102, 102); 
+}
+#mesa .l4 {
+    background: rgb(102, 102, 102); 
+}
+
+
+.container {
+    perspective: 400px;
+}
+
+#mesa {
+    transform-style: preserve-3d;
+}
+
+
+#mesa .back {
+    transform: rotateX(0deg) translateZ(-7.5px);
+}
+#mesa .front {
+    transform: rotateX(0deg) translateZ(7.5px);
+}
+
+#mesa .l1 {
+    transform: rotateY(90deg) translateY(135px)  translateZ(-9px);
+}
+#mesa .l2 {
+    transform: rotateY(90deg) translateY(135px)  translateZ(294px);
+}
+#mesa .l3 {
+    transform: rotateX(90deg)   translateX(135px) translateZ(-294px);
+}
+#mesa .l4 {
+    transform: rotateX(90deg)   translateX(135px) translateZ(9px);
+}
+
+
+#mesa .pata1, .pata2, .pata3, .pata4 {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+  }
+  
+  #mesa .pata1 > div {
+      
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 17px;
+    background: #dddddd;
+    content: "";
+    transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(1px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(1px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(1px);
+  }
+  #mesa .pata1 > div:nth-child(2) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
+    background: #dddddd;
+  }
+  #mesa .pata1 > div:nth-child(3) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
+    background: #dddddd;
+  }
+  #mesa .pata1 > div:nth-child(4) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
+    background: #dddddd;
+  }
+  #mesa .pata1 > div:nth-child(5) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
+    background: #dddddd;
+  }
+  #mesa .pata1 > div:nth-child(6) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
+    background: #dddddd;
+  }
+  #mesa .pata1 > div:nth-child(7) {
+   
+    transform:  rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
+    background: #dddddd;
+  }
+
+
+  #mesa .pata2 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 17px;
+    background: #dddddd;
+    content: "";
+    transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(303px);
+    -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(303px);
+    -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(303px);
+  }
+
+ #mesa .pata3 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 150px;
+    background: #dddddd;
+    content: "";
+    transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-1px);
+    -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-1px);
+    -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-1px);
+  }
+  
+  #mesa .pata3 > div:nth-child(2) {
+    
+    transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
+    -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
+    -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
+    background: #dddddd;
+
+  }
+  #mesa .pata3 > div:nth-child(3) {
+    
+    transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
+    -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
+    -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
+    background: #dddddd;
+
+  }
+  #mesa .pata3 > div:nth-child(4) {
+    
+    transform:  rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
+    -webkit-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
+    -moz-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
+    background: #dddddd;
+
+  }
+  #mesa .pata3 > div:nth-child(5) {
+    
+    transform:  rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
+    -webkit-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
+    -moz-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
+    background: #dddddd;
+
+  }
+  #mesa .pata3 > div:nth-child(6) {
+    
+    transform:  rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
+    -webkit-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
+    -moz-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
+    background: #dddddd;
+
+  }
+  #mesa .pata3 > div:nth-child(7) {
+    
+    transform:  rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
+    -webkit-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
+    -moz-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
+    background: #dddddd;
+
+  }
+  
+  #mesa .pata4 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 150px;
+    background: #dddddd;
+    content: "";
+    transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-304px);
+    -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-304px);
+    -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-304px);
+  }
+
