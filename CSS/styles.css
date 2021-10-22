@@ -65,35 +65,33 @@
     width: 5%;
     height: 5%;
     margin: 0;
-    border: 2px solid  rgb(102, 102, 102);
+    border: 1px solid  rgb(29, 14, 3);
     position: absolute;
 }
 
 #mesa .back {
     border-radius: 50%;
 
-    /* background: hsla(34, 100%, 50%, 0.5); */
     background-image: url("madera.jpg"); 
 }
 #mesa .front {
     border-radius: 50%;
     background-image: url("madera.jpg"); 
 
-    /* background: hsla(34, 100%, 50%, 0.5);  */
 }
 
 #mesa .l1 {
-    background: rgb(102, 102, 102); 
+    background-image: url("patas.jpg"); 
 }
 
 #mesa .l2 {
-    background: rgb(102, 102, 102); 
+    background-image: url("patas.jpg"); 
 }
 #mesa .l3 {
-    background: rgb(102, 102, 102); 
+    background-image: url("patas.jpg"); 
 }
 #mesa .l4 {
-    background: rgb(102, 102, 102); 
+    background-image: url("patas.jpg"); 
 }
 
 
@@ -140,7 +138,7 @@
     left: 0;
     width: 150px;
     height: 17px;
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
     content: "";
     transform-origin: left top 0;
     -webkit-transform-origin: left top 0;
@@ -154,42 +152,42 @@
     transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(17px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
   #mesa .pata1 > div:nth-child(3) {
    
     transform:  rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(136px)  translateZ(286px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
   #mesa .pata1 > div:nth-child(4) {
    
     transform:  rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(138px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
   #mesa .pata1 > div:nth-child(5) {
    
     transform:  rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(0px)  translateZ(155px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
   #mesa .pata1 > div:nth-child(6) {
    
     transform:  rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(138px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
   #mesa .pata1 > div:nth-child(7) {
    
     transform:  rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
     -webkit-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
     -moz-transform: rotateY(90deg) translateX(7.5px) translateY(288px)  translateZ(155px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
   }
 
 
@@ -199,7 +197,7 @@
     left: 0;
     width: 150px;
     height: 17px;
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
     content: "";
     transform-origin: left top 0;
     -webkit-transform-origin: left top 0;
@@ -215,7 +213,7 @@
     left: 0;
     width: 17px;
     height: 150px;
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
     content: "";
     transform-origin: left top 0;
     -webkit-transform-origin: left top 0;
@@ -230,7 +228,7 @@
     transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
     -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
     -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-17px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   #mesa .pata3 > div:nth-child(3) {
@@ -238,7 +236,7 @@
     transform:  rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
     -webkit-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
     -moz-transform: rotateX(90deg) translateX(138px) translateY(-158px)  translateZ(-288px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   #mesa .pata3 > div:nth-child(4) {
@@ -246,7 +244,7 @@
     transform:  rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
     -webkit-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
     -moz-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-152px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   #mesa .pata3 > div:nth-child(5) {
@@ -254,7 +252,7 @@
     transform:  rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
     -webkit-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
     -moz-transform: rotateX(90deg) translateX(1px) translateY(-158px)  translateZ(-137px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   #mesa .pata3 > div:nth-child(6) {
@@ -262,7 +260,7 @@
     transform:  rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
     -webkit-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
     -moz-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-137px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   #mesa .pata3 > div:nth-child(7) {
@@ -270,7 +268,7 @@
     transform:  rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
     -webkit-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
     -moz-transform: rotateX(90deg) translateX(286px) translateY(-158px)  translateZ(-152px);
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
 
   }
   
@@ -280,7 +278,7 @@
     left: 0;
     width: 17px;
     height: 150px;
-    background: #dddddd;
+    background-image: url("patas.jpg"); 
     content: "";
     transform-origin: left top 0;
     -webkit-transform-origin: left top 0;
